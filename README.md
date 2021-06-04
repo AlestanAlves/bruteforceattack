@@ -8,15 +8,21 @@ nmap -sS 10.0.2.4 | tee nmap-ss.txt
 
 Por que fazer um port scanning? a ideia de se fazer um tipo de scan desses e buscar portas abertas e suscetíveis a ataques. Usando o `tee` conseguimos salvar estas portas em um arquivo txt.
 
-## Analise de vulnerabilidades
+## Análise de vulnerabilidades
 
-Depois da analise das portas vamos fazer uma analise de vulnerabilidades utilizando o Sparta que e uma ferramenta de scanner de vulnerabilidades. Com o Sparta ja instalado vamos rodar alguns comandos para iniciarmos ele.
+Depois da análise das portas vamos fazer uma análise de vulnerabilidades utilizando o Sparta que é uma ferramenta de scanner de vulnerabilidades. Com o Sparta já instalado vamos rodar alguns comandos para iniciarmos ele.
 
 Start in /usr/share/sparta
 
 ```
 python3 sparta.py 
 ```
+
+Após o início do programa colocamos nosso host 10.0.2.4 que será atacado e podemos buscar por vulnerabilidades dentro desse servidor.
+
+![image](https://user-images.githubusercontent.com/48387196/120836104-934d6f80-c53b-11eb-824f-124133d6274f.png)
+
+Com o sparta o nmap roda até o layer 3 e roda também o nikto para busca de vulnerabilidades web. Ainda podemos rodar o disbuster por exemplo para buscar pastas escondidas no servidor web e também fazer um brute force direto no programa.
 
 ## Mitre Att&ck
 
@@ -34,7 +40,7 @@ Vamos utilizar a ferramenta Hydra para fazer esse brute force dentro do servidor
 hydra -l msfadmin -P rockyou.txt telnet -V 
 ```
 
-Atraves do hidra e de senhas ja conhecidas em uma wordlist conseguimos obter o acesso ao servidor 
+Através do hidra e de senhas já conhecidas em uma wordlist conseguimos obter o acesso ao servidor 
 
 ## Tools using
 
