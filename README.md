@@ -2,9 +2,11 @@
 
 ## Scan das portas
 
+```
 nmap -sS 10.0.2.4 | tee nmap-ss.txt
+```
 
-Por que fazer um port scanning? a ideia de se fazer um tipo de scan desses e buscar portas abertas e suscetíveis a ataques. Usando o tee conseguimos salvar estas portas que conseguimos obter através deste scan.
+Por que fazer um port scanning? a ideia de se fazer um tipo de scan desses e buscar portas abertas e suscetíveis a ataques. Usando o `tee` conseguimos salvar estas portas que conseguimos obter através deste scan.
 
 ## Brute Force Attack
 
@@ -18,6 +20,7 @@ Sabemos que existem portas abertas dentro do servidor e com isso podemos fazer u
 
 ## Ascii Hacked
 
+```
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XX                                                                          XX
@@ -91,3 +94,4 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
  |_|   \__,_|\__|_|   \__,_|_|_| |_|\__,_|
                                           
                                           
+```
