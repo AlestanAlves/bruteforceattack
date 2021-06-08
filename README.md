@@ -73,6 +73,11 @@ Rodar o shell
 
 Agora se eu der um `id` ou `whoami` eu apareco como root
 
+Entao agora bora na pasta principal do servidor e criar um arquivo de txt com uma mensagem contendo o ASCII abaixo.
+
+```
+touch msg.txt
+```
 
 ## Tools using
 
