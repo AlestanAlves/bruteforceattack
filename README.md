@@ -52,13 +52,31 @@ Através do hidra e de senhas já conhecidas em uma wordlist conseguimos obter o
 
 ![hack](https://hackerculture.com.br/wp-content/uploads/2021/04/priv-escalation.png)
 
-Depois de buscar o acesso ao servidor percebemos que o o user nao tem previlegios para a gente conseguir acessar todas as vulnerabilidades, por isso vamos precisar de uma escala de privilegios
+Depois de buscar o acesso ao servidor percebemos que o user não tem privilégios para a gente conseguir acessar todas as vulnerabilidades, por isso vamos precisar de uma escala de privilégios
 
-Vamos buscar por todos os programas que possuem privilegios:
+Vamos buscar por todos os programas que possuem privilégios:
 
 ```
 find / -user root -perm -4000 2>/dev/null
 ```
+
+Logo após sabermos que o nmap possui privilégio vamos utilizar ele para ter acesso root ao servidor, utilizando o código abaixo para ter acesso ao modo interativo do nmap.
+
+```
+nmap --interactive 
+```
+Rodar o shell
+
+```
+!sh
+```
+
+Vamos modificar o motd do servidor para mostrar outra msg so para estudo mas daria para fazer muito mais coisas sendo um usuario root
+
+```
+vim /etc/motd
+```
+
 
 ## Tools using
 
