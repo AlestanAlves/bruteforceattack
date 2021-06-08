@@ -106,6 +106,8 @@ CTRL + Z
 - sparta
 - GTFOBins
 
+No documento da GS explico mais sobre como combater tais falhas encontradas e analisadas neste README
+
 ## ASCII
 
 ```
