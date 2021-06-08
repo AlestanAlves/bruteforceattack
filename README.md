@@ -30,6 +30,14 @@ Brute Force ID: T1110
 
 Os adversários podem usar técnicas de força bruta para obter acesso a contas quando as senhas são desconhecidas ou quando os hashes de senha são obtidos. Sem o conhecimento da senha de uma conta ou conjunto de contas, um adversário pode adivinhar a senha usando um mecanismo repetitivo ou iterativo. A força bruta de senhas pode ocorrer por meio da interação com um serviço que verificará a validade dessas credenciais ou off-line em relação aos dados de credenciais adquiridos anteriormente, como hashes de senha.
 
+Exploitation for Privilege Escalation ID:T1068
+
+Os adversários podem explorar vulnerabilidades de software na tentativa de elevar privilégios. A exploração de uma vulnerabilidade de software ocorre quando um adversário se aproveita de um erro de programação em um programa, serviço ou no próprio software do sistema operacional ou kernel para executar código controlado pelo adversário. Construções de segurança, como níveis de permissão, muitas vezes dificultam o acesso a informações e o uso de certas técnicas, pois os adversários provavelmente precisarão realizar escalonamento de privilégios para incluir o uso de exploração de software para contornar essas restrições.
+
+Ao obter inicialmente acesso a um sistema, um adversário pode estar operando dentro de um processo com privilégios inferiores, o que o impedirá de acessar certos recursos do sistema. Podem existir vulnerabilidades, geralmente em componentes do sistema operacional e software geralmente executados com permissões mais altas, que podem ser exploradas para obter níveis mais altos de acesso no sistema. Isso pode permitir que alguém mude de permissões de nível de usuário ou sem privilégios para permissões de SISTEMA ou root, dependendo do componente vulnerável. Isso também pode permitir que um adversário mude de um ambiente virtualizado, como em uma máquina virtual ou contêiner, para o host subjacente. Essa pode ser uma etapa necessária para um comprometimento do adversário com um sistema de terminal que foi configurado corretamente e limita outros métodos de escalonamento de privilégios.
+
+Os adversários podem trazer um driver vulnerável assinado para uma máquina comprometida para que possam explorar a vulnerabilidade para executar o código no modo kernel. Esse processo às vezes é conhecido como Traga seu próprio driver vulnerável (BYOVD). [1] [2] Os adversários podem incluir o driver vulnerável com arquivos entregues durante o acesso inicial ou baixá-lo para um sistema comprometido via Ingress Tool Transfer ou Lateral Tool Transfer.
+
 ## TelNet
 
 O TELNET é um serviço muito vulnerável. Por não possuir nenhum tipo de criptografia, permite a descoberta de senhas e captura de informações.Através de uma sessão TELNET é possível disparar ataques, descobrir portas desprotegidas e serviços que estão sendo executados no servidor. O TELNET também é usado freqüentemente para gerar correio e notícias falsas (fakemail e fakenews).
