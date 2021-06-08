@@ -54,6 +54,13 @@ Através do hidra e de senhas já conhecidas em uma wordlist conseguimos obter o
 
 Depois de buscar o acesso ao servidor percebemos que o user não tem privilégios para a gente conseguir acessar todas as vulnerabilidades, por isso vamos precisar de uma escala de privilégios
 
+Entrando no servidor:
+
+```
+ssh funcionario@10.0.2.4
+```
+
+
 Vamos buscar por todos os programas que possuem privilégios:
 
 ```
