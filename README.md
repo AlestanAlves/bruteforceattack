@@ -40,10 +40,10 @@ Sabemos que existem portas abertas dentro do servidor e com isso podemos fazer u
 
 Vamos utilizar a ferramenta Hydra para fazer esse brute force dentro do servidor e buscar entrar dentro do servidor apenas usando uma wordlist e batendo user e senha.
 
-Vamos entrar na pasta do kali /user/share/wordlists e fazer um gunzip do rockyou.
+Vamos entrar na pasta do kali /user/share/wordlists e fazer um gunzip do rockyou.(mas como vamos utilizar um exemplo eu baixei uma wordlist da internet mais simples para não demorar tanto esse brute force).
 
 ```
-hydra -l msfadmin -P rockyou.txt 10.0.2.4 telnet -V 
+hydra -l funcionario -P rockyou.txt 10.0.2.4 telnet -V 
 ```
 
 Através do hidra e de senhas já conhecidas em uma wordlist conseguimos obter o acesso ao servidor 
@@ -59,7 +59,6 @@ Entrando no servidor:
 ```
 ssh funcionario@10.0.2.4
 ```
-
 
 Vamos buscar por todos os programas que possuem privilégios:
 
@@ -90,7 +89,6 @@ cat > motd
 e cola o ASCII
 CTRL + Z
 ```
-
 
 ## Tools using
 
