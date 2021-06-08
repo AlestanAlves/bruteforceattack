@@ -80,10 +80,13 @@ Rodar o shell
 
 Agora se eu der um `id` ou `whoami` eu apareco como root
 
-Entao agora bora na pasta principal do servidor e criar um arquivo de txt com uma mensagem contendo o ASCII abaixo.
+Entao agora bora na pasta principal do servidor e clonar nosso repositorio mas antes excluir o motd que ja existe.
 
 ```
-touch msg.txt
+rm -rf motd
+```
+```
+git clone repo
 ```
 
 ## Tools using
