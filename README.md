@@ -1,5 +1,7 @@
 ![banner GS cyber](https://user-images.githubusercontent.com/48387196/121257879-9a9ab300-c884-11eb-9a9a-4923081f3d28.png)
 
+Essa exploração de vulnerabilidades tem por objetivo buscar entrar em um servidor para demonstrar as possíveis falhas através do uso de brute force e escalação de privilégios.
+
 ## Scan das portas
 
 ```
