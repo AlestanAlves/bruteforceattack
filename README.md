@@ -88,6 +88,7 @@ rm -rf motd
 ```
 cat > motd
 e cola o ASCII
+CTRL + Z
 ```
 
 
