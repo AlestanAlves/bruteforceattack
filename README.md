@@ -87,7 +87,7 @@ Rodar o shell
 
 Agora se eu der um `id` ou `whoami` eu apareco como root
 
-Entao agora bora na pasta principal do servidor e clonar nosso repositorio mas antes excluir o motd que ja existe.
+Entao agora bora na pasta principal do servidor e colocar nossa ASCII no motd
 
 ```
 rm -rf motd
