@@ -106,7 +106,7 @@ CTRL + Z
 - sparta
 - GTFOBins
 
-## Ascii Hacked
+## ASCII
 
 ```
                         |\
