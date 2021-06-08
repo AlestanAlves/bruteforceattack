@@ -86,8 +86,10 @@ Entao agora bora na pasta principal do servidor e clonar nosso repositorio mas a
 rm -rf motd
 ```
 ```
-git clone repo
+cat > motd
+e cola o ASCII
 ```
+
 
 ## Tools using
 
