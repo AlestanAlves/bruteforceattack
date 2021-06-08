@@ -74,7 +74,7 @@ Vamos buscar por todos os programas que possuem privilégios:
 find / -user root -perm -4000 2>/dev/null
 ```
 
-Logo após sabermos que o nmap possui privilégio vamos utilizar ele para ter acesso root ao servidor, utilizando o código abaixo para ter acesso ao modo interativo do nmap.
+Logo após sabemos que o nmap possui privilégio vamos utilizar ele para ter acesso root ao servidor, utilizando o código abaixo para ter acesso ao modo interativo do nmap.
 
 ```
 nmap --interactive 
