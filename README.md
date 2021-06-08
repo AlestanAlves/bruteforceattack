@@ -48,6 +48,18 @@ hydra -l msfadmin -P rockyou.txt 10.0.2.4 telnet -V
 
 Através do hidra e de senhas já conhecidas em uma wordlist conseguimos obter o acesso ao servidor 
 
+## Escalando privilegios
+
+![hack](https://hackerculture.com.br/wp-content/uploads/2021/04/priv-escalation.png)
+
+Depois de buscar o acesso ao servidor percebemos que o o user nao tem previlegios para a gente conseguir acessar todas as vulnerabilidades, por isso vamos precisar de uma escala de privilegios
+
+Vamos buscar por todos os programas que possuem privilegios:
+
+```
+find / -user root -perm -4000 2>/dev/null
+```
+
 ## Tools using
 
 - nmap
