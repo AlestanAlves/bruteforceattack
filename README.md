@@ -71,11 +71,7 @@ Rodar o shell
 !sh
 ```
 
-Vamos modificar o motd do servidor para mostrar outra msg so para estudo mas daria para fazer muito mais coisas sendo um usuario root
-
-```
-vim /etc/motd
-```
+Agora se eu der um `id` ou `whoami` eu apareco como root
 
 
 ## Tools using
@@ -84,6 +80,7 @@ vim /etc/motd
 - hydra
 - wordlists
 - sparta
+- GTFOBins
 
 ## Ascii Hacked
 
