@@ -30,6 +30,10 @@ Brute Force ID: T1110
 
 Os adversários podem usar técnicas de força bruta para obter acesso a contas quando as senhas são desconhecidas ou quando os hashes de senha são obtidos. Sem o conhecimento da senha de uma conta ou conjunto de contas, um adversário pode adivinhar a senha usando um mecanismo repetitivo ou iterativo. A força bruta de senhas pode ocorrer por meio da interação com um serviço que verificará a validade dessas credenciais ou off-line em relação aos dados de credenciais adquiridos anteriormente, como hashes de senha.
 
+## TelNet
+
+O TELNET é um serviço muito vulnerável. Por não possuir nenhum tipo de criptografia, permite a descoberta de senhas e captura de informações.Através de uma sessão TELNET é possível disparar ataques, descobrir portas desprotegidas e serviços que estão sendo executados no servidor. O TELNET também é usado freqüentemente para gerar correio e notícias falsas (fakemail e fakenews).
+
 ## Brute Force Attack
 
 Sabemos que existem portas abertas dentro do servidor e com isso podemos fazer um ataque de força bruta e tentar acessar o servidor. Fiz uma fork de um repositório com wordlists e vamos tentar buscar acesso com uma senha já conhecida por diversas pessoas.
